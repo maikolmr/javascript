@@ -14,3 +14,13 @@ function soma(n1) {
         }
     }
 }
+
+function somafuncao(n1) { 
+    return function s2(n2) {
+        return function s3(f3) {
+            return f3(n1,n2);
+        }
+    }
+}
+
+console.log(somafuncao(1)(2)((n1, n2) => n1 * n2))
